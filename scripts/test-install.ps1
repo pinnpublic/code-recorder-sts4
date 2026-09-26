@@ -16,7 +16,7 @@ $info = Join-Path $TestHome 'configuration/org.eclipse.equinox.simpleconfigurato
 $before = @(Get-Content $info | Where-Object { $_ -and !$_.StartsWith('#') })
 Copy-Item -LiteralPath $info -Destination (Join-Path $runRoot 'bundles-before.info')
 $launcher = Get-ChildItem (Join-Path $TestHome 'plugins') -Filter 'org.eclipse.equinox.launcher_*.jar' | Select-Object -First 1
-$archive = Join-Path $projectRoot 'dist/code-recorder-sts4-update-site-0.4.1.zip'
+$archive = Join-Path $projectRoot 'dist/code-recorder-sts4-update-site-0.4.2.zip'
 $repository = 'jar:' + ([uri]$archive).AbsoluteUri + '!/'
 if ($AdditionalRepository) { $repository += ',' + $AdditionalRepository }
 & (Join-Path $JdkHome 'bin/java.exe') -jar $launcher.FullName -install $TestHome -configuration (Join-Path $TestHome 'configuration') -data (Join-Path $runRoot 'provisioning-workspace') -nosplash -consoleLog -application org.eclipse.equinox.p2.director -repository $repository -installIU dev.coderecorder.feature.feature.group -destination $TestHome -profile DefaultProfile -roaming

@@ -4,13 +4,13 @@
 
 ## 사용 환경
 
-확인된 환경은 **Spring Tools 4.32.2.RELEASE / Eclipse 4.37 / Windows**, IDE 실행용 **JDK 21**입니다. IDE 실행용 Java와 프로젝트의 JDK 설정은 별개입니다. 확장 버전은 **0.4.1**입니다.
+확인된 환경은 **Spring Tools 4.32.2.RELEASE / Eclipse 4.37 / Windows**, IDE 실행용 **JDK 21**입니다. IDE 실행용 Java와 프로젝트의 JDK 설정은 별개입니다. 확장 버전은 **0.4.2**입니다.
 
 ## 설치
 
 | 파일 | 용도 |
 |---|---|
-| `code-recorder-sts4-update-site-0.4.1.zip` | STS4 확장 설치 |
+| `code-recorder-sts4-update-site-0.4.2.zip` | STS4 확장 설치 |
 
 1. **Help → Install New Software… → Add… → Archive…**를 선택합니다.
 2. 제공된 확장 설치 ZIP을 선택합니다. 압축은 풀지 않습니다.
@@ -44,3 +44,7 @@
 녹화 중에는 저장 위치에 `.journal.jsonl` 복구 기록도 생성됩니다. 비정상 종료로 최종 파일이 만들어지지 않았다면 복구를 위해 이 파일을 보관하세요.
 
 녹화에는 시작 코드와 삭제한 코드도 포함됩니다. 다른 사람에게 전달하기 전에 내용을 확인하세요.
+
+## 사용 라이선스
+
+MIT 라이선스로 배포됩니다. 저작권 및 라이선스 고지를 유지하면 사용·수정·재배포·상업적 이용이 가능합니다. 자세한 조건은 [LICENSE](LICENSE)를 확인하세요.

@@ -10,7 +10,7 @@ $config = Join-Path $runRoot 'configuration'
 $simple = Join-Path $config 'org.eclipse.equinox.simpleconfigurator'
 $classes = Join-Path $runRoot 'classes'
 New-Item -ItemType Directory -Force -Path $simple,$classes | Out-Null
-$classpath = (Join-Path $StsHome 'plugins/*') + ';' + (Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.1.jar')
+$classpath = (Join-Path $StsHome 'plugins/*') + ';' + (Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.2.jar')
 $sources = @(Get-ChildItem (Join-Path $projectRoot 'tests/eclipse/src') -Recurse -Filter '*.java' | ForEach-Object { $_.FullName })
 & (Join-Path $JdkHome 'bin/javac.exe') --release 21 -encoding UTF-8 -classpath $classpath -d $classes $sources
 if ($LASTEXITCODE -ne 0) { throw 'Integration test compilation failed' }
@@ -25,7 +25,7 @@ $bundleLines = Get-Content (Join-Path $StsHome 'configuration/org.eclipse.equino
         $parts -join ','
     }
 }
-if (!$Installed) { $bundleLines += 'dev.coderecorder,0.4.1,' + (FileUri (Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.1.jar')) + ',4,false' }
+if (!$Installed) { $bundleLines += 'dev.coderecorder,0.4.2,' + (FileUri (Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.2.jar')) + ',4,false' }
 $bundleLines += 'dev.coderecorder.tests,0.1.0,' + (FileUri $testJar) + ',4,false'
 [IO.File]::WriteAllLines((Join-Path $simple 'bundles.info'), $bundleLines, [Text.UTF8Encoding]::new($false))
 $framework = Get-ChildItem (Join-Path $StsHome 'plugins') -Filter 'org.eclipse.osgi_*.jar' | Select-Object -First 1

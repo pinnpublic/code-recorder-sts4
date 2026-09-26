@@ -1,7 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
-<feature id="dev.coderecorder.feature" label="Code Recorder for STS4" version="0.4.2" provider-name="pinnpublic">
-  <description>Record code edits and file changes in Spring Tools 4 and export them as JSON.</description>
-  <license url="https://github.com/pinnpublic/code-recorder-sts4/blob/main/LICENSE">MIT License
+MIT License
 
 Copyright (c) 2026 pinnpublic
 
@@ -22,6 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-</license>
-  <plugin id="dev.coderecorder" version="0.4.2" download-size="0" install-size="0" unpack="false" />
-</feature>

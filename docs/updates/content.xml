@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?metadataRepository version='1.2.0'?>
+<repository name="file:////C:/code/code-recorder/code-recorder-sts4/build/update-site-2f0ba3177c364fb8a3cd94e97b0f1c62/repository - metadata" type="org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository" version="1">
+  <properties size="2">
+    <property name="p2.timestamp" value="1790411947633" />
+    <property name="p2.compressed" value="false" />
+  </properties>
+  <units size="4">
+    <unit id="file:/C:/code/code-recorder/code-recorder-sts4/build/update-site-2f0ba3177c364fb8a3cd94e97b0f1c62/source/site.xml.code-recorder" version="1.0.0.0773cN3gvE">
+      <properties size="2">
+        <property name="org.eclipse.equinox.p2.name" value="Code Recorder" />
+        <property name="org.eclipse.equinox.p2.type.category" value="true" />
+      </properties>
+      <provides size="1">
+        <provided namespace="org.eclipse.equinox.p2.iu" name="file:/C:/code/code-recorder/code-recorder-sts4/build/update-site-2f0ba3177c364fb8a3cd94e97b0f1c62/source/site.xml.code-recorder" version="1.0.0.0773cN3gvE" />
+      </provides>
+      <requires size="1">
+        <required namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder.feature.feature.group" range="[0.4.2,0.4.2]" />
+      </requires>
+    </unit>
+    <unit id="dev.coderecorder.feature.feature.jar" version="0.4.2">
+      <properties size="3">
+        <property name="org.eclipse.equinox.p2.name" value="Code Recorder for STS4" />
+        <property name="org.eclipse.equinox.p2.description" value="Record code edits and file changes in Spring Tools 4 and export them as JSON." />
+        <property name="org.eclipse.equinox.p2.provider" value="pinnpublic" />
+      </properties>
+      <provides size="3">
+        <provided namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder.feature.feature.jar" version="0.4.2" />
+        <provided namespace="org.eclipse.equinox.p2.eclipse.type" name="feature" version="1.0.0" />
+        <provided namespace="org.eclipse.update.feature" name="dev.coderecorder.feature" version="0.4.2" />
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size="1">
+        <artifact classifier="org.eclipse.update.feature" id="dev.coderecorder.feature" version="0.4.2" />
+      </artifacts>
+      <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0" />
+      <touchpointData size="1">
+        <instructions size="1">
+          <instruction key="zipped">
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size="1">
+        <license uri="https://github.com/pinnpublic/code-recorder-sts4/blob/main/LICENSE" url="https://github.com/pinnpublic/code-recorder-sts4/blob/main/LICENSE">
+          MIT License
+
+Copyright (c) 2026 pinnpublic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+        </license>
+      </licenses>
+    </unit>
+    <unit id="dev.coderecorder.feature.feature.group" version="0.4.2" singleton="false">
+      <update id="dev.coderecorder.feature.feature.group" range="[0.0.0,0.4.2)" severity="0" />
+      <properties size="4">
+        <property name="org.eclipse.equinox.p2.name" value="Code Recorder for STS4" />
+        <property name="org.eclipse.equinox.p2.description" value="Record code edits and file changes in Spring Tools 4 and export them as JSON." />
+        <property name="org.eclipse.equinox.p2.provider" value="pinnpublic" />
+        <property name="org.eclipse.equinox.p2.type.group" value="true" />
+      </properties>
+      <provides size="1">
+        <provided namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder.feature.feature.group" version="0.4.2" />
+      </provides>
+      <requires size="2">
+        <required namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder" range="[0.4.2,0.4.2]" />
+        <required namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder.feature.feature.jar" range="[0.4.2,0.4.2]">
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <licenses size="1">
+        <license uri="https://github.com/pinnpublic/code-recorder-sts4/blob/main/LICENSE" url="https://github.com/pinnpublic/code-recorder-sts4/blob/main/LICENSE">
+          MIT License
+
+Copyright (c) 2026 pinnpublic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+        </license>
+      </licenses>
+    </unit>
+    <unit id="dev.coderecorder" version="0.4.2" generation="2">
+      <update id="dev.coderecorder" range="[0.0.0,0.4.2)" severity="0" />
+      <properties size="2">
+        <property name="org.eclipse.equinox.p2.name" value="Code Recorder" />
+        <property name="org.eclipse.equinox.p2.provider" value="Code Recorder" />
+      </properties>
+      <provides size="6">
+        <provided namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder" version="0.4.2" />
+        <provided namespace="osgi.bundle" name="dev.coderecorder" version="0.4.2" />
+        <provided namespace="java.package" name="dev.coderecorder" version="0.0.0" />
+        <provided namespace="java.package" name="dev.coderecorder.core" version="0.0.0" />
+        <provided namespace="osgi.identity" name="dev.coderecorder" version="0.4.2">
+          <properties size="1">
+            <property name="type" value="osgi.bundle" />
+          </properties>
+        </provided>
+        <provided namespace="org.eclipse.equinox.p2.eclipse.type" name="bundle" version="1.0.0" />
+      </provides>
+      <requires size="13">
+        <required namespace="osgi.bundle" name="org.eclipse.core.runtime" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.core.resources" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.core.filebuffers" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.ui" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.ui.ide" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.ui.workbench.texteditor" range="0.0.0" greedy="false" />
+        <required namespace="osgi.bundle" name="org.eclipse.jface.text" range="0.0.0" greedy="false" />
+        <requiredProperties namespace="osgi.ee" match="(&amp;(osgi.ee=JavaSE)(version=21))">
+          <description>
+            dev.coderecorder
+          </description>
+        </requiredProperties>
+        <required namespace="org.eclipse.equinox.p2.iu" name="dev.coderecorder.source" range="[0.4.2,0.4.2]" optional="true">
+          <filter>
+            (org.eclipse.update.install.sources=true)
+          </filter>
+        </required>
+        <required match="id == 'com.sun.xml.bind' &amp;&amp; version &lt; version('2.3.0')" min="0" max="0" greedy="false" />
+        <required match="id == 'javaewah'" min="0" max="0" greedy="false" />
+        <required match="id == 'javax.xml'" min="0" max="0" greedy="false" />
+        <required match="id == 'org.eclipse.equinox.coordinator'" min="0" max="0" greedy="false" />
+      </requires>
+      <artifacts size="1">
+        <artifact classifier="osgi.bundle" id="dev.coderecorder" version="0.4.2" />
+      </artifacts>
+      <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0" />
+      <touchpointData size="1" />
+    </unit>
+  </units>
+</repository>

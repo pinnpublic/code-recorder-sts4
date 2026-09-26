@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <site>
-  <description name="Code Recorder">제작자: 박세인 | 2026-09-25 — 수업 중 코드 작성 과정을 기록하고 학생의 단계별 복습을 돕는 도구입니다.</description>
-  <feature url="features/dev.coderecorder.feature_0.4.1.jar" id="dev.coderecorder.feature" version="0.4.1">
-    <category name="code-recorder"/>
+  <description name="Code Recorder for STS4">Record code edits and file changes in Spring Tools 4.</description>
+  <feature url="features/dev.coderecorder.feature_0.4.2.jar" id="dev.coderecorder.feature" version="0.4.2">
+    <category name="code-recorder" />
   </feature>
-  <category-def name="code-recorder" label="Code Recorder"/>
+  <category-def name="code-recorder" label="Code Recorder" />
 </site>

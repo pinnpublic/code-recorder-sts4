@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:////C:/code/code-recorder/code-recorder-sts4/build/update-site-2f0ba3177c364fb8a3cd94e97b0f1c62/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1790411947632'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='org.eclipse.update.feature' id='dev.coderecorder.feature' version='0.4.2'>
+      <properties size='5'>
+        <property name='artifact.size' value='1338'/>
+        <property name='download.size' value='1338'/>
+        <property name='download.checksum.sha-512' value='99d01b71db8d7c095461567e548c939c511b79b7b2433565cd7421e76ef6297dcdb7a53cca278ddd1c133c5a3f250ffa804cfb8d75b488f808a887a2d8bbef94'/>
+        <property name='download.checksum.sha-256' value='3f3e57ee90cec6df9cdef58d6ffb1008e8c0bf9dd6c6cc6997cc3538efe63c8b'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='dev.coderecorder' version='0.4.2'>
+      <properties size='4'>
+        <property name='artifact.size' value='35334'/>
+        <property name='download.size' value='35334'/>
+        <property name='download.checksum.sha-512' value='31a67b4fa49d7789dfb8364c23708604505c9fbf4cda4ba6b150b953150412f781d41d16237e90498b5b62c9b7557b260c5f6202954289d546a708197b94e6e5'/>
+        <property name='download.checksum.sha-256' value='f700181d879ed2d9a99f2c3512473a695ac748e757900c6977e3c6ac2b60c259'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

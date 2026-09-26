@@ -4,7 +4,7 @@
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
-$pluginJar = Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.1.jar'
+$pluginJar = Join-Path $projectRoot 'build/artifacts/dev.coderecorder_0.4.2.jar'
 if (!(Test-Path $pluginJar)) { throw 'Run scripts/build.ps1 first.' }
 $runRoot = Join-Path $projectRoot ('build/update-site-' + [guid]::NewGuid().ToString('N'))
 $source = Join-Path $runRoot 'source'
@@ -14,7 +14,7 @@ $simple = Join-Path $config 'org.eclipse.equinox.simpleconfigurator'
 New-Item -ItemType Directory -Force -Path $simple,$repository,(Join-Path $source 'plugins'),(Join-Path $source 'features') | Out-Null
 Copy-Item -LiteralPath $pluginJar -Destination (Join-Path $source 'plugins')
 Copy-Item -LiteralPath (Join-Path $projectRoot 'feature/site.xml') -Destination $source
-& (Join-Path $JdkHome 'bin/jar.exe') --create --file (Join-Path $source 'features/dev.coderecorder.feature_0.4.1.jar') -C (Join-Path $projectRoot 'feature') feature.xml
+& (Join-Path $JdkHome 'bin/jar.exe') --create --file (Join-Path $source 'features/dev.coderecorder.feature_0.4.2.jar') -C (Join-Path $projectRoot 'feature') feature.xml
 if ($LASTEXITCODE -ne 0) { throw 'Feature packaging failed' }
 function FileUri([string]$path) { return ([uri]$path).AbsoluteUri }
 $bundles = Get-Content (Join-Path $StsHome 'configuration/org.eclipse.equinox.simpleconfigurator/bundles.info') | ForEach-Object {
@@ -65,7 +65,7 @@ foreach ($requirement in $compatibility.requires.required) {
 }
 $recorderUnit.requires.SetAttribute('size', [string]$recorderUnit.requires.ChildNodes.Count)
 $metadata.Save((Join-Path $repository 'content.xml'))
-$archive = Join-Path $projectRoot 'dist/code-recorder-sts4-update-site-0.4.1.zip'
+$archive = Join-Path $projectRoot 'dist/code-recorder-sts4-update-site-0.4.2.zip'
 & (Join-Path $JdkHome 'bin/jar.exe') --create --file $archive --no-manifest -C $repository .
 if ($LASTEXITCODE -ne 0) { throw 'Update site archive failed' }
 Write-Output "Update site: $archive"
