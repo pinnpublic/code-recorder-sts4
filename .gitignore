@@ -6,3 +6,4 @@ plugin/bin/
 *.partial
 player/
 INSTALL-DIAGNOSIS.md
+*.log
