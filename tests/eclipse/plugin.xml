@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <extension point="org.eclipse.ui.startup">
+    <startup class="dev.coderecorder.tests.StartupProbe"/>
+  </extension>
+  <extension point="org.eclipse.core.runtime.applications" id="run">
+    <application><run class="dev.coderecorder.tests.IntegrationApp"/></application>
+  </extension>
+</plugin>

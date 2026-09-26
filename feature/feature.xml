@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="dev.coderecorder.feature" label="Code Recorder - 수업용 코드 기록·복습 도구" version="0.4.1" provider-name="박세인">
+  <description>제작자: 박세인 | 2026-09-25
+
+수업 중 코드 작성 과정을 시간순으로 기록하고, 학생이 한 단계씩 따라 하며 복습할 수 있도록 돕는 도구입니다.</description>
+  <plugin id="dev.coderecorder" version="0.4.1" download-size="0" install-size="0" unpack="false"/>
+</feature>

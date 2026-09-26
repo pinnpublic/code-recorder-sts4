@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STS 4.32.2 provides these packages through newer bundles. Do not let p2
+     replace those providers with legacy alternatives during recorder install.
+     Generic match requirements are required: namespace/name requirements ignore
+     min/max and would accidentally REQUIRE the incompatible bundles. -->
+<requires>
+  <required match="id == 'com.sun.xml.bind' &amp;&amp; version &lt; version('2.3.0')" min="0" max="0" greedy="false" />
+  <required match="id == 'javaewah'" min="0" max="0" greedy="false" />
+  <required match="id == 'javax.xml'" min="0" max="0" greedy="false" />
+  <required match="id == 'org.eclipse.equinox.coordinator'" min="0" max="0" greedy="false" />
+</requires>

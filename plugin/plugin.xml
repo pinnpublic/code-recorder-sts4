@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.ui.views">
+    <category id="dev.coderecorder.category" name="Code Recorder"/>
+    <view id="dev.coderecorder.view" name="Code Recorder" category="dev.coderecorder.category"
+          class="dev.coderecorder.RecorderView" restorable="true"/>
+  </extension>
+  <extension point="org.eclipse.ui.commands">
+    <command id="dev.coderecorder.open" name="코드 녹화 창 열기"/>
+  </extension>
+  <extension point="org.eclipse.ui.handlers">
+    <handler commandId="dev.coderecorder.open" class="dev.coderecorder.OpenHandler"/>
+  </extension>
+  <extension point="org.eclipse.ui.menus">
+    <menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+      <menu id="dev.coderecorder.menu" label="코드 녹화">
+        <command commandId="dev.coderecorder.open" label="녹화 창 열기" style="push"/>
+      </menu>
+    </menuContribution>
+  </extension>
+</plugin>
