@@ -16,15 +16,13 @@
 
 ### Eclipse Marketplace
 
-[Code Recorder for STS4 등록 페이지](https://marketplace.eclipse.org/content/code-recorder-sts4)
+[Code Recorder for STS4 설치 페이지](https://marketplace.eclipse.org/content/code-recorder-sts4)
 
 1. STS4에서 **Help → Eclipse Marketplace…**를 엽니다.
 2. `Code Recorder for STS4`를 검색합니다.
 3. 사용 중인 IDE에 맞는 항목의 **Install**을 누릅니다.
 4. 설치 항목과 라이선스를 확인하고 설치한 뒤 IDE를 재시작합니다.
 5. **코드 녹화 → 녹화 창 열기**를 선택합니다.
-
-마켓 심사 중에는 검색·설치가 제공되지 않을 수 있습니다. 이 경우 아래 ZIP 설치 방법을 이용하세요.
 
 ### ZIP 파일
 
@@ -58,10 +56,6 @@
 시작 코드와 이후 편집, 붙여넣기, 자동 완성, 실행 취소·다시 실행, 파일 전환·생성·이동·삭제를 기록합니다. 숨김 경로, 빌드 산출물, 설정한 제외 이름은 기록하지 않습니다.
 
 파일당 2MB, 초기 텍스트 합계 약 64MB 제한이 있습니다. 큰 프로젝트는 필요한 하위 폴더를 선택하세요. 여러 탭이 있는 편집기는 **소스 탭**에서 사용합니다.
-
-## 플레이어
-
-[STS4 플레이어 열기](https://paper.pe.kr/code-recorder/sts4/)
 
 ### 녹화 파일 열기
 
